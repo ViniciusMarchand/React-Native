@@ -6,6 +6,8 @@ import Texto from '../../componentes/Texto';
 
 =======
 >>>>>>> parent of 6462eae (att):orgs-cesta/src/telas/Cesta.js
+=======
+>>>>>>> parent of 6462eae (att):orgs-cesta/src/telas/Cesta.js
 //IMAGENS
 import topo from '../../../assets/topo.png';
 import logo from '../../../assets/logo.png';
