@@ -1,8 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Dimensions, Text, View } from 'react-native';
 
-import Texto from '../componentes/Texto';
-
 //IMAGENS
 import topo from '../../assets/topo.png';
 import logo from '../../assets/logo.png';
@@ -12,15 +10,15 @@ const width = Dimensions.get('screen').width;
 export default function cesta(){
     return <>
         <Image source={topo} style={estilos.topo}/>
-        <Texto style={estilos.titulo}>Detalhe da cesta</Texto>
+        <Text style={estilos.titulo}>Detalhe da cesta</Text>
         <View style={estilos.cesta}>
-            <Texto style={estilos.nome}>Cesta de verduras</Texto>
+            <Text style={estilos.nome}>Cesta de verduras</Text>
             <View style={estilos.fazenda}>
             <Image source={logo} style={estilos.imagemFazenda}/>
-            <Texto style={estilos.nomeFazenda}>Jenny Jack Farm</Texto>
+            <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
             </View>
-            <Texto style={estilos.descricao}>Uma cesta com produtos slecionados cuidadosamente da fazendo direto para sua cozinha</Texto>
-            <Texto style={estilos.preco}>R$40,00</Texto>
+            <Text style={estilos.descricao}>Uma cesta com produtos slecionados cuidadosamente da fazendo direto para sua cozinha</Text>
+            <Text style={estilos.preco}>R$40,00</Text>
 
         </View>
     </>
@@ -40,7 +38,7 @@ const estilos = StyleSheet.create({
         lineHeight: 26,
         color:"white",
         padding: 16,
-        fontWeight: "bold",
+        fontFamily: "MontserratBold",
 
     },
     cesta:{
@@ -51,7 +49,7 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         color: "#464646",
-        fontWeight:"bold",
+        fontFamily:"MontserratBold",
     },
     fazenda:{
         flexDirection:"row",
@@ -76,7 +74,7 @@ const estilos = StyleSheet.create({
 
     },
     preco:{
-        fontWeight: "bold",
+        fontFamily: "MontserratBold",
         color: "#2A9F85",
         fontSize: 26,
         marginTop:8,
