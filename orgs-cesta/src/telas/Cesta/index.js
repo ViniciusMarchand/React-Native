@@ -2,6 +2,7 @@ import React from 'react';
 import { Image, StyleSheet, Dimensions, Text, View } from 'react-native';
 
 <<<<<<< HEAD:orgs-cesta/src/telas/Cesta/index.js
+<<<<<<< HEAD:orgs-cesta/src/telas/Cesta/index.js
 import Texto from '../../componentes/Texto';
 
 =======
