@@ -33,8 +33,6 @@ const estilos = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: "MontserratRegular",
-
     },
     imagemFazenda: {
         width: 32,
@@ -44,7 +42,6 @@ const estilos = StyleSheet.create({
         color: "#A3A3A3",
         fontSize: 16,
         lineHeight: 26,
-        fontFamily: "MontserratRegular",
 
     },
     preco: {
@@ -55,4 +52,4 @@ const estilos = StyleSheet.create({
         lineHeight: 42,
     },
 
-})
+});
