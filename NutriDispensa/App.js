@@ -1,38 +1,32 @@
 import * as React from 'react';
-import { View, Text , StyleSheet} from 'react-native';
+import { View, Text , StyleSheet, SafeAreaView, StatusBar} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator} from '@react-navigation/stack';
 
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-}
+import Home from './src/telas/home';
+import PaginaCadastro from './src/telas/paginaCadastro';
 
-function DetailsScreen() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Details Screen</Text>
-    </View>
-  );
-}
-
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 function App() {
   return (
+
+
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+      <Stack.Navigator initialRouteName='Home'>
+
+        <Stack.Screen name='Home' component={Home}/>
+        <Stack.Screen name='PaginaCadastro' component={PaginaCadastro} />
+
       </Stack.Navigator>
     </NavigationContainer>
+    
+
   );
 }
 
 export default App;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
