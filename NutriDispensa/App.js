@@ -1,7 +1,11 @@
 import * as React from 'react';
-import { View, Text , StyleSheet, SafeAreaView, StatusBar} from 'react-native';
+import { StyleSheet, View} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator} from '@react-navigation/stack';
+
+import {useFonts, Roboto_400Regular, Roboto_700Bold} from '@expo-google-fonts/roboto';
+
+
 
 import Home from './src/telas/home';
 import PaginaCadastro from './src/telas/paginaCadastro';
@@ -9,6 +13,16 @@ import PaginaCadastro from './src/telas/paginaCadastro';
 const Stack = createStackNavigator();
 
 function App() {
+
+  const [fontCarregada] = useFonts({
+    "RobotoRegular": Roboto_400Regular,
+    "RobotoBold": Roboto_700Bold,
+  });
+  
+  if(!fontCarregada){
+    return <View/>
+  }
+
   return (
 
 

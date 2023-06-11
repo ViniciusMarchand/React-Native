@@ -1,19 +1,24 @@
 import React from 'react';
 
-import {View, Text, Button} from 'react-native';
-
+import {View, Button, StyleSheet} from 'react-native';
+import Texto from '../../componentes/Texto';
 export default function Home({navigation}){
 return <>
 
         <View>
-            <Text>
-                Home
-                <Button
+            <Texto style={estilos.frase}>
+                Home teste para saber se está funcionando a font
+            </Texto>
+            <Button
                 title='Sobre'
                 onPress={() => navigation.navigate('PaginaCadastro')}/>
-            </Text>
         </View>
 
        </>
     
 }
+
+const estilos = StyleSheet.create({
+    frase:{
+    }
+})
