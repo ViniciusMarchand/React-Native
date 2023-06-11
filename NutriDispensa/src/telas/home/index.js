@@ -10,7 +10,7 @@ return <>
         </Texto>
         <View style={estilos.funcoesDiv}>
             <View style={estilos.row}>
-                <TouchableOpacity style={estilos.funcoes, estilos.cadastrarAlimento} onPress={() => navigation.navigate('PaginaCadastro')}>
+                <TouchableOpacity style={estilos.cadastrarAlimento} onPress={() => navigation.navigate('PaginaCadastro')}>
                     <Texto style={estilos.textoFuncoes}>Cadastrar Alimento</Texto>
                 </TouchableOpacity>
                 <TouchableOpacity style={estilos.funcoes}></TouchableOpacity>
