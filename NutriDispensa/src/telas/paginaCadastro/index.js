@@ -5,7 +5,7 @@ export default function PaginaCadastro(){
     return <>
             <View>
                 <Text>
-                    paginaCadastro
+                    ///PaginaCadastro
                 </Text>
             </View>
         </>
