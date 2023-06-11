@@ -10,16 +10,15 @@ return <>
         </Texto>
         <View style={estilos.funcoesDiv}>
             <View style={estilos.row}>
-                <TouchableOpacity style={estilos.funcoes} onPress={() => navigation.navigate('PaginaCadastro')}></TouchableOpacity>
+                <TouchableOpacity style={estilos.funcoes, estilos.cadastrarAlimento} onPress={() => navigation.navigate('PaginaCadastro')}>
+                    <Texto style={estilos.textoFuncoes}>Cadastrar Alimento</Texto>
+                </TouchableOpacity>
                 <TouchableOpacity style={estilos.funcoes}></TouchableOpacity>
             </View>
             <View style={estilos.row}>
                 <TouchableOpacity style={estilos.funcoes}></TouchableOpacity>
                 <TouchableOpacity style={estilos.funcoes}></TouchableOpacity>
             </View>
-
-
-
 
         </View>
     
@@ -48,12 +47,28 @@ const estilos = StyleSheet.create({
         width:160,
         height:160,
         backgroundColor:"blue",
+        justifyContent:"center",
+        alignItems:"center",
+        borderRadius:5,
+    },
+    textoFuncoes:{
+        color:"#FDFDFD",
+        fontWeight:"bold",
+        fontSize:25,
     },
     row:{
         flexDirection:"row",
         width:"100%",
         justifyContent:"space-around",
-        marginBottom: 25
+        marginBottom: 25,
+    },
+    cadastrarAlimento:{
+        backgroundColor: "#BDB1D6",
+        width:160,
+        height:160,
+        justifyContent:"center",
+        alignItems:"center",
+        borderRadius:5,
     }
 
 })
